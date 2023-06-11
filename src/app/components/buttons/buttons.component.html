@@ -1,0 +1,8 @@
+<div class='mt-9'>
+  <button
+    class='first:bg-yellow-300 [&:not(:last-child)]:mr-12 py-1 px-5 rounded-lg border-solid border border-slate-400'
+  *ngFor='let button of buttons; let i = index'
+ >
+ {{button | uppercase}}
+ </button> 
+</div>

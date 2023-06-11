@@ -1,1 +1,15 @@
-<div>{{item[0].title_name}}</div>
+  <div class='flex justify-around items-center h-24' >
+    <img src={{item[0].header_logo}}/>
+    <app-nav 
+      [items]='itemsNav'
+    >
+    </app-nav>
+    <span class='uppercase'>contact</span>
+  </div>
+  
+  <div>
+    <div class='relative'><img class=' h-screen object-cover' src={{item[0].title_image}}/></div>
+    <h1 class='text-8xl ml-10 " text-white absolute bottom-0'>{{item[0].title_name | uppercase}}</h1>
+  </div>
+  
+  <app-buttons [buttons]='buttons'></app-buttons>

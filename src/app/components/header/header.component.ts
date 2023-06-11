@@ -7,4 +7,14 @@ import { IData } from 'src/app/models';
 })
 export class HeaderComponent {
   @Input() item: IData;
+  itemsNav = ['Projects', 'Expertise', 'Job', 'News', 'About'];
+
+  buttons = [
+    'C.F. Møller Architects',
+    'Lean, green and digital with BIM',
+    'Sustainability',
+    'Awards',
+    'team',
+    'History',
+  ];
 }
